@@ -4,7 +4,12 @@
   "description": "Module 20 challenge",
   "main": "vite.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "",
