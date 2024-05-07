@@ -7,7 +7,7 @@ function Header(props) {
   return (
     <div>
       <section>
-        <header className="flex-row px-1">
+        <header className="flex-row">
           <div>
             <h1>Jackson Jones</h1>
           </div>
