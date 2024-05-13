@@ -16,7 +16,9 @@ function About() {
       <div className="flex-row">
         <div className="about-info">
           <p>
-            Hello, I am Jackson. I'm trying to be nice at coding!
+            Hello, I am Jackson. I am currently studying to become a Full Stack Developer.
+            <br /> I love all things tech, I and cannot wait to see where my coding journey takes me!
+            <br /> Please take a look at my work, and of course feel free to reach out!
           </p>
         </div>
       </div>

@@ -55,9 +55,9 @@ const projects = [
 function Portfolio() {
   return (
     <div>
-      <header className="projectsHeader">
+      <div className="projectsHeader">
         <h2>My Projects</h2>
-      </header>
+      </div>
       <div className="portfolio-container">
         <div className="project-grid">
           {projects.map((project) => (
