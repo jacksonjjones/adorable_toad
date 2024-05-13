@@ -48,6 +48,8 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 ## Link to deployed app!
 
+https://jajportfolio.netlify.app/
+
 ## Screenshots of generated app!
 
 ![Screenshot of Deployed app](/screenshots/about.png)
