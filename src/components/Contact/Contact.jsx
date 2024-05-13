@@ -1,16 +1,17 @@
-import React, { useState } from "react";
+import React, { useState } from "react"; // Importing React and useState from the React library
 
-// Here we import a helper function that will check if the email is valid
+// Importing a helper function that will check if the email is valid
 import { validateEmail } from "../../utils/helpers";
 
 function Contact() {
   // Create state variables for the fields in the form
   // We are also setting their initial values to an empty string
-  const [email, setEmail] = useState("");
-  const [userName, setUserName] = useState("");
-  const [message, setMessage] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
+  const [email, setEmail] = useState(""); // State variable for email
+  const [userName, setUserName] = useState(""); // State variable for username
+  const [message, setMessage] = useState(""); // State variable for message
+  const [errorMessage, setErrorMessage] = useState(""); // State variable for error message
 
+  // Function to handle input change in the form fields
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
     const { target } = e;
@@ -27,6 +28,7 @@ function Contact() {
     }
   };
 
+  // Function to handle form submission
   const handleFormSubmit = (e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
@@ -64,7 +66,6 @@ function Contact() {
               onChange={handleInputChange}
               type="text"
               id="contact-name"
-              
             />
 
             {/* Email */}
@@ -75,7 +76,6 @@ function Contact() {
               onChange={handleInputChange}
               type="email"
               id="contact-email"
-              
             />
 
             {/* Message */}
@@ -93,6 +93,7 @@ function Contact() {
             </button>
           </form>
         </div>
+        {/* Display error message if there is any */}
         {errorMessage && (
           <div>
             <p className="error-text">{errorMessage}</p>

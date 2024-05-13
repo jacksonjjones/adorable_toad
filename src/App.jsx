@@ -1,16 +1,16 @@
-import React, { useState } from "react";
-import Header from "../src/components/Header/Header";
-import About from "../src/components/About/About";
-import Contact from "../src/components/Contact/Contact";
-import Portfolio from "../src/components/Portfolio/Portfolio";
-import Resume from "../src/components/Resume/Resume";
-import Footer from "../src/components/Footer/Footer";
-import "./App.css";
+import React, { useState } from "react"; // Import React and useState hook
+import Header from "../src/components/Header/Header"; // Import Header component
+import About from "../src/components/About/About"; // Import About component
+import Contact from "../src/components/Contact/Contact"; // Import Contact component
+import Portfolio from "../src/components/Portfolio/Portfolio"; // Import Portfolio component
+import Resume from "../src/components/Resume/Resume"; // Import Resume component
+import Footer from "../src/components/Footer/Footer"; // Import Footer component
+import "./App.css"; // Import CSS file for styling
 
 function App() {
-  const [currentTab, handleTabChange] = useState("about");
+  const [currentTab, handleTabChange] = useState("about"); // Define state for currentTab using useState hook
 
-  // This method is checking to see what the value of `currentTab` is. Depending on the value of currentPage, we return the corresponding component to render.
+  // Define a method to render the corresponding component based on the currentTab state
   const renderTab = () => {
     if (currentTab === "About") {
       return <About />;
@@ -29,15 +29,15 @@ function App() {
 
   return (
     <>
-      <title>Jackson Jones | {currentTab} </title>
+      <title>Jackson Jones | {currentTab} </title> {/* Set title dynamically based on currentTab */}
       <Header
-        currentTab={currentTab}
-        handleTabChange={handleTabChange}
+        currentTab={currentTab} // Pass currentTab state as prop to Header component
+        handleTabChange={handleTabChange} // Pass handleTabChange function as prop to Header component
       ></Header>
-      <main>{renderTab()}</main>
-      <Footer></Footer>
+      <main>{renderTab()}</main> {/* Render the corresponding tab content */}
+      <Footer></Footer> {/* Render Footer component */}
     </>
   );
 }
 
-export default App;
+export default App; // Export App component

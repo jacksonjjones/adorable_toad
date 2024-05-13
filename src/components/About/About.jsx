@@ -1,6 +1,6 @@
-import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faUserAstronaut} from '@fortawesome/free-solid-svg-icons'
+import React from "react"; // Importing React library
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome' // Importing FontAwesomeIcon component from the react-fontawesome library
+import { faUserAstronaut } from '@fortawesome/free-solid-svg-icons' // Importing the user-astronaut icon from the free-solid-svg-icons library
 
 function About() {
   return (
@@ -11,13 +11,14 @@ function About() {
         </h1>
       </div>
       <div className="avatar">
-      <FontAwesomeIcon icon={faUserAstronaut} size="4x" />
+        {/* Rendering the user-astronaut icon */}
+        <FontAwesomeIcon icon={faUserAstronaut} size="4x" />
       </div>
       <div className="flex-row">
         <div className="about-info">
           <p>
             Hello, I am Jackson. I am currently studying to become a Full Stack Developer.
-            <br /> I love all things tech, I and cannot wait to see where my coding journey takes me!
+            <br /> I love all things tech, and I cannot wait to see where my coding journey takes me!
             <br /> Please take a look at my work, and of course feel free to reach out!
           </p>
         </div>
@@ -27,4 +28,3 @@ function About() {
 }
 
 export default About;
-
