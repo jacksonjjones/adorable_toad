@@ -76,7 +76,7 @@ header {
   }
 
   .about p {
-    color: #0E5259;
+    color: #1c3738;
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
@@ -86,7 +86,8 @@ header {
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    margin-bottom: 35px;
+    margin-bottom: 30px;
+    color: #1c3738;
   }
   
   .about-info {
@@ -104,15 +105,15 @@ header {
     font-weight: bold;
     width: 100%;
     height: 100px;
-    position: sticky;
     bottom: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 5px;
   }
 
   main {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
   }
   .logo {
     cursor: pointer;
@@ -127,3 +128,141 @@ header {
     color: #8baaad;
     transition: .5s ease;
   }
+
+  .contact {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  .contact-form {
+    width: 30%; /* Set a fixed width for the form container */
+    padding: 20px; /* Add padding for spacing */
+   
+  }
+
+.contact h3 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 40px;
+  color: #1c3738;
+}
+
+.form label {
+  display: block; /* Make labels display as block elements */
+  margin-bottom: 5px;
+}
+
+.form input,
+.form textarea {
+  width: 100%; /* Make input and textarea elements fill the entire width of the container */
+  margin-bottom: 20px; /* Add margin below inputs for spacing */
+  font-size: 15px;
+  height: 30px;
+  background-color: #f4fff8;
+  border: 1px solid #ccc; /* Add a 1px solid border with color #ccc */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+}
+
+.form button {
+  display: block; /* Change button display to block */
+  width: 100px; /* Set button width to 50% */
+  margin: 0 auto; /* Center the button horizontally */
+  padding: 10px; /* Add padding for spacing */
+  background-color: #1c3738; /* Add a background color for the button */
+  color: #f4fff8; /* Set text color to white */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  cursor: pointer; /* Add cursor pointer on hover */
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+.form button:hover {
+  background-color: #8baaad; /* Change background color on hover */
+  transition: .5s ease;
+}
+
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 100%;
+  padding: 15px;
+}
+
+.project-card {
+  flex: 0 0 calc(33.33% - 20px);
+  margin: 25px;
+  max-width: 500px;
+  text-align: center;
+  background-color: #f4fff8;
+  border-radius: 5px;
+  border: #D9DFDB solid 1px;
+}
+
+
+.card-content {
+  margin: 5px;
+  height: 0;
+}
+
+.card-title {
+  margin: 5px;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.card img {
+  width: 500px;
+  height: 300px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.card-footer {
+  margin-top: 20px;
+  width: 50%;
+  justify-content: space-around;
+  margin: auto;
+  padding-top: 15px;
+  
+}
+
+
+.projectsHeader h2 {
+  margin: 0 auto;
+  font-size: 40px;
+}
+
+.button-link {
+  width: 100px;
+  padding: 10px;
+  background-color: #1c3738;
+  color: #f4fff8;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  text-decoration: none; /* Remove default underline for links */
+}
+
+.button-link:hover {
+  background-color: #8baaad;
+  transition: .5s ease;
+}
+
+
+/* Add CSS for smaller screens */
+@media (max-width: 600px) {
+  .form input,
+  .form textarea {
+    width: 100%; /* Make input and textarea elements fill the entire width on smaller screens */
+    max-width: none; /* Remove the maximum width on smaller screens */
+    margin-right: 0; /* Remove the right margin on smaller screens */
+  }
+}
