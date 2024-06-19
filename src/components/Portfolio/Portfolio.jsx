@@ -1,7 +1,7 @@
 import React from "react"; // Import React library
 import onlineBookshelfImage from "../assets/onlineBookshelf.png"; // Import image for Online Bookshelf project
 import techBlogImage from "../assets/techBlog.png"; // Import image for Tech Blog project
-import fillMyBellyImage from "../assets/fillMyBelly.png"; // Import image for Fill My Belly project
+import iHikeImage from "../assets/iHike.png"; // Import image for iHike project
 import weatherDashboardImage from "../assets/weatherDashboard.png"; // Import image for Weather Dashboard project
 import jsQuizImage from "../assets/jsQuiz.png"; // Import image for JavaScript Quiz project
 import workDaySchedulerImage from "../assets/workDayScheduler.png"; // Import image for Work Day Scheduler project
@@ -10,24 +10,24 @@ import workDaySchedulerImage from "../assets/workDayScheduler.png"; // Import im
 const projects = [
   {
     id: 0,
-    title: "Online Bookshelf",
-    image: onlineBookshelfImage,
-    repo: "https://github.com/jacksonjjones/online_bookshelf", // GitHub repository link
-    live: "https://online-bookshelf-3a41511a672a.herokuapp.com/", // Live site link
+    title: "iHike",
+    image: iHikeImage,
+    repo: "https://github.com/prismhead26/I-Hike", // GitHub repository link
+    live: "https://i-hike.onrender.com/", // Live site link
   },
   {
     id: 1,
+    title: "Online Bookshelf",
+    image: onlineBookshelfImage,
+    repo: "https://github.com/jacksonjjones/online_bookshelf", // GitHub repository link
+    live: "https://online-bookshelf-3a41511a672a.herokuapp.com/", // Live site lin
+  },
+  {
+    id: 2,
     title: "The Tech Blog",
     image: techBlogImage,
     repo: "https://github.com/jacksonjjones/exotic_butter", // GitHub repository link
     live: "https://exotic-butter-ae43edb28af4.herokuapp.com/", // Live site link
-  },
-  {
-    id: 2,
-    title: "Fill My Belly",
-    image: fillMyBellyImage,
-    live: "https://jacksonjjones.github.io/Fill_My_Belly/", // Live site link
-    repo: "https://github.com/jacksonjjones/Fill_My_Belly", // GitHub repository link
   },
   {
     id: 3,
@@ -41,7 +41,7 @@ const projects = [
     title: "JavaScript Quiz",
     image: jsQuizImage,
     repo: "https://github.com/jacksonjjones/functional_rock", // GitHub repository link
-    live: "", // Live site link (not available)
+    live: "https://jacksonjjones.github.io/functional_rock/", // Live site link 
   },
   {
     id: 5,

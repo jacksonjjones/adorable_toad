@@ -1,7 +1,7 @@
 import React from "react"; // Import React
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesomeIcon component
 import { faDownload } from '@fortawesome/free-solid-svg-icons'; // Import faDownload icon from FontAwesome
-import resume from "../assets/resume.pdf"; // Import resume PDF file
+import resume from "../assets/Jackson_Jones_Resume.pdf"; // Import resume PDF file
 
 function Resume() {
   return (
